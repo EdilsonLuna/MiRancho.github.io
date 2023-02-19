@@ -1,0 +1,371 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    background-image: url(img/doodle1.png);
+    background-repeat: repeat;
+}
+nav{
+    display: inline-flex;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 8px gray;
+    position: fixed;
+    z-index: 9999999;
+    padding: 10px;
+}
+
+.logo{
+    width: 130px;
+    height: 70px;
+    transition: .5s;
+}
+
+.logo-container{
+    position: relative;
+    width: 130px;
+    height: 70px;
+    margin: 0px auto;
+}
+
+.menu{
+    position: absolute;
+}
+
+.logo:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.menu{
+    margin-top: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+.menu>span{
+    font-size: 35px;
+}
+
+.menu>span:hover{
+    cursor: pointer;
+}
+
+.text-div, .text-div2{
+    background-image: url(img/doodle1.png);
+    background-repeat: repeat;
+}
+
+.menu-list{
+    width: 170px;
+    top: 90px;
+    left: -200px;
+    position: fixed;
+    z-index: 9999999;
+    background-color: rgb(227, 227, 227);
+    height: 690px;
+    opacity: 0;
+    transition: .6s;
+    transition-delay: .5s;
+}
+
+.menu-list>ul{
+    list-style: none;
+}
+
+.menu-list>ul>li{
+    width: 160px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+    left: -30px;
+    transition: .5s;
+}
+
+.menu-list>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.body-content{
+    width: 100%;
+    position: absolute;
+    top: 90px;
+}
+
+.food-layer{
+    height: 360px;
+    display: flex;
+    overflow: hidden;
+}
+
+.food-img{
+    width: 60%;
+    height: 360px;
+    position: absolute;
+}
+
+.food-img2{
+    right: 0;
+}
+
+.text-div2{
+    transform: rotate(-7deg);
+    width: 800px;
+    height: 800px;
+    top: -50px;
+    position: relative;
+    background-color: rgb(222, 219, 219);
+    left: -110px;
+    margin-right: 25%;
+}
+
+.text-div{
+    transform: rotate(7deg);
+    width: 800px;
+    height: 800px;
+    top: -50px;
+    margin-left: 50%;
+    position: relative;
+    background-color: rgb(222, 219, 219);
+}
+
+.text{
+    width: 50%;
+    transform: rotate(-7deg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.text2{
+    width: 50%;
+    transform: rotate(7deg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+.section2{
+    padding-top: 20px;
+}
+.list-menu-container{
+    background-color: #1f1f1f;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 0px auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    filter: drop-shadow(0 0 10px red ) drop-shadow(0 0 20px red );
+    transition-duration: 1s;
+    flex-direction: column;
+    z-index: 30;
+}
+
+.menu-title{
+    transition-duration: 1s;
+    position: absolute;
+}
+
+.menu-price{
+    width: 103%;
+    border-radius: 20px;
+    transform: scale(0);
+    opacity: 0;
+    transition-duration: .6s;
+}
+
+
+
+.dep{
+    padding-top: 19px;
+    height: 160px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    filter: drop-shadow(0 0 10px white);
+    transition: 1s;
+    z-index: 18;
+}
+
+
+.list-menu-container:hover{
+    background-image: url(img/fondo.png);
+}
+
+
+.more{
+    background-color: white;
+    border-radius: 100%;
+    width:60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    left: 43%;
+    position: relative;
+    transition: 1s;
+}
+
+
+.dep1>h2{
+    position: relative;
+    top: 50px;
+    transition: 1s;
+}
+
+
+
+.dep3:hover>.price-table{
+    opacity: 1;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.dep3:hover{
+    height: 300px;
+    margin-bottom: 200px;
+}
+
+.dep3:hover>.more{
+    position: relative;
+    top: -5px;
+}
+
+.more1 ,.more2,.more3{
+    top: -140px;
+}
+
+
+.more span{
+    font-size:50px;
+}
+
+.price-table{
+    transform: scale(0);
+    opacity: 0;
+    transition: 1s;
+}
+
+.dep2>h2{
+    position: relative;
+    top: 40px;
+    transition: 1s;
+}
+
+.dep2:hover>h2{
+    top: 0px;
+    transition: 1s;
+}
+
+.dep2:hover >.price-table{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.dep2:hover>.more{
+    top: 10px;
+}
+
+.dep1:hover{
+    margin-top: 170px;
+    height: 300px; 
+    transition: 1s;
+}
+
+.dep2:hover{
+    height: 300px;
+    transition: 1s;
+}
+
+.dep1:hover>h2{
+    top: 0px;
+    transition: 1s;
+}
+.dep1:hover>.more{
+    top: 10px;
+    transition: 1s;
+}
+
+.dep1:hover > .price-table{
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+}
+
+.footer-container{
+    background-color: #1f1f1f;
+    color: rgb(175, 175, 175);
+    margin-bottom: -16px;
+    filter: drop-shadow(0 -10px 10px gray);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-list{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.footer-list >:first-child{
+    list-style: none;
+}
+
+.footer-list>li{
+    margin-left:20px ;
+    margin-right: 20px;
+}
+
+.footer-list>li>a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-list>li>a:hover{
+    color: rgb(59, 59, 250);
+    text-decoration:underline;
+}
+
+.list-menu-container:hover{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 500px;
+    height: 480px;
+    overflow:hidden;
+    border: 3px solid rgb(255, 115, 0);
+    filter: drop-shadow(0 0 10px rgb(255, 115, 0));
+    transition-duration: 1s;
+}
+.list-menu-container:hover .menu-price{
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: .5s;
+}
+
+.list-menu-container:hover>.menu-title{
+    transform:scale(0.1);
+    color: black;
+    rotate: 360deg;
+    transition-duration: 1s;
+}
+
+.list-menu-container >h3{
+    transform: rotate(-45deg);
+}
+.menu-list>ul>li:hover{
+    background-color: rgb(204, 203, 203);
+    box-shadow: 0px 1px 6px gray;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.menu:hover>.menu-list{
+    transition: .6s;
+    left: -10px;
+    opacity: 1;
+}
